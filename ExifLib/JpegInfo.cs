@@ -2,6 +2,8 @@
 
 namespace ExifLib
 {
+    using Newtonsoft.Json;
+
     public class JpegInfo
     {
         /// <summary>
@@ -253,6 +255,7 @@ namespace ExifLib
         /// <summary>
         /// Thumbnail data found in the Exif section.
         /// </summary>
+        [JsonIgnore]
         public byte[] ThumbnailData
         {
             get;
